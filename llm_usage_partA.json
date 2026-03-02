@@ -1,0 +1,203 @@
+{
+  "student_metadata": {
+    "name": "Soumyaranjan Behera",
+    "roll_number": "230102",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-02"
+  },
+
+  "selected_paper": {
+    "title": "A Study of Information Retrieval Weighting Schemes for Sentiment Analysis",
+    "authors": "Georgios Paltoglou, Mike Thelwall",
+    "venue": "Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics (ACL 2010)",
+    "year": 2010,
+    "pages": "1386-1395",
+    "official_link": "https://aclanthology.org/P10-1141/",
+    "pdf_link": "https://aclanthology.org/P10-1141.pdf",
+    "primary_method": "Support Vector Machine (SVM)",
+    "core_rank": "A*"
+  },
+
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude",
+      "model": "claude-sonnet-4-6",
+      "provider": "Anthropic"
+    },
+    {
+      "tool_name": "Perplexity",
+      "model": "GPT 5.2 ",
+      "provider": "Perplexity"
+    },
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 pro",
+      "provider": "Google"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-02",
+      "tool_name": "Claude",
+      "model": "claude-sonnet-4-6",
+      "purpose": "Understanding the full Part A requirements and constraints before selecting any paper",
+      "prompt": "This is the requirement for Research paper submission. So according to the guideline in section A pdf, I chose a paper, you have to review is it meeting all the requirement and following all the constraints or not, then you have to assess is it easy to implement in Section B and C or not.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Gave me a structured breakdown of all Part A requirements: CORE A* venue from the 2009-2012 editions, method alignment with ARIMA/GMM/SVM, dataset constraints, CPU-only compute feasibility, JSON disclosure format, and the first-come first-select uniqueness rule. This helped me understand what I needed to verify before committing to any paper.",
+      "student_verification": "I cross-checked every requirement against the original Part A PDF myself, including the evaluation rubric table, and confirmed the breakdown was accurate before proceeding.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-02",
+      "tool_name": "Perplexity",
+      "model": "GPT-5.2",
+      "purpose": "Reviewing my first paper choice — Target-dependent Twitter Sentiment Classification (ACL 2011) — against all Part A requirements",
+      "prompt": "The Paper is: Paper title: Target-dependent Twitter Sentiment Classification, Authors: Long Jiang, Mo Yu, Ming Zhou, Xiaohua Liu, Tiejun Zhao, Conference/venue: ACL 2011, Method category: Support Vector Machine (SVM). Is it meeting all the requirements and following all the constraints?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed the paper passed all formal eligibility checks (ACL 2011 A*, year 2011, SVM primary method, 10 pages, not a dataset paper). However it also flagged two serious practical risks: (1) the original dataset of 1,939 hand-labelled tweets was never publicly released by the authors, requiring a SemEval substitute, and (2) reproducing the target-dependent features requires a full dependency parsing pipeline using spaCy, making Part B significantly harder than a simple bag-of-words SVM.",
+      "student_verification": "I independently verified on ACL Anthology that the paper's Section 6 confirms the authors built their own private corpus. I also checked that no public download link exists for the original dataset. This matched Claude's disclosure exactly.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-02",
+      "tool_name": "Claude",
+      "model": "claude-sonnet-4-6",
+      "purpose": "Assessing implementation difficulty of the ACL 2011 Twitter paper more honestly",
+      "prompt": "It's an easy to execute task or not?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Claude gave an honest medium-difficulty rating and specifically identified that the dependency parsing for target-dependent features (the 7 syntactic rules in Section 4.2) was the hardest part to implement and explain in Part C without tools. This made me realise that while the paper was formally valid, it was riskier than I initially thought for Parts B and C.",
+      "student_verification": "I read Section 4.2 of the paper myself and confirmed that extracting features like arg1, arg2, cp_arg1 requires a working dependency parse tree, which is not trivial to set up and explain under exam conditions.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-02",
+      "tool_name": "Claude",
+      "model": "claude-sonnet-4-6",
+      "purpose": "Looking for easier SVM or GMM alternatives not already taken by classmates",
+      "prompt": "Can we suggest some easy SVM, GMM paper which is not in this list and very easy to execute as well.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Pointed me toward JMLR and EMNLP venues which had very few papers taken, and suggested that papers using tabular UCI datasets with linear SVM would be the easiest to implement. Also surfaced a specific candidate: Maximum Relative Margin and Data-Dependent Regularization (Shivaswamy and Jebara, JMLR 2010).",
+      "student_verification": "I scanned the full submission sheet myself row by row and confirmed which venues still had open slots before pursuing any specific suggestion.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-02",
+      "tool_name": "Claude",
+      "model": "claude-sonnet-4-6",
+      "purpose": "Reviewing second candidate: Maximum Relative Margin and Data-Dependent Regularization (Shivaswamy, Jebara, JMLR 2010)",
+      "prompt": "So I should go completely with this paper right? It's verified means fulfilling all the requirements of the instruction given and also easy to implement right?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Claude confirmed all formal requirements were met (JMLR 2010 A*, SVM primary method, UCI datasets). However I then independently noticed the paper runs from pages 747 to 788 — that is 42 pages of dense theory including Rademacher complexity bounds, multiple lemmas, and formal proofs. Claude had initially called it easy without flagging this.",
+      "student_verification": "I checked the JMLR volume 11 index myself and confirmed pages 747 to 788 equals 42 pages. This was a case where I caught an error in the LLM's recommendation through my own verification.",
+      "confidence_level": 3
+    },
+    {
+      "interaction_id": 6,
+      "date": "2026-03-02",
+      "tool_name": "Claude",
+      "model": "claude-sonnet-4-6",
+      "purpose": "Challenging the JMLR recommendation after discovering the 42-page problem",
+      "prompt": "it's a 42 page paper right, which will be hard for the section c without any tool and internet",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Claude acknowledged the mistake and agreed that a 42-page paper with Rademacher complexity proofs would be extremely difficult to explain in Part C without tools. This prevented me from submitting a paper that looked feasible on the surface but was actually theory-heavy. This interaction taught me to always check page count and theoretical depth as primary feasibility criteria, not just venue and method alignment.",
+      "student_verification": "Confirmed pages 747-788 = 42 pages independently. The LLM's initial recommendation was incorrect and I caught it through my own verification, which reinforced the importance of independent checking.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 7,
+      "date": "2026-03-02",
+      "tool_name": "perplexity",
+      "model": "GPT-5.2",
+      "purpose": "Evaluating third candidate: Scalable Training of Mixture Models via Coresets (Feldman, Faulkner, Krause, NeurIPS 2011)",
+      "prompt": "Check this one then? Scalable Training of Mixture Models via Coresets — Feldman, Faulkner, Krause, NeurIPS 2011. And also check if it satisfies the venue requirement explicitly — the paper must be published in a CORE A* conference or journal.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed all formal requirements passed: NeurIPS 2011 (A*), GMM primary method, 8 pages, MNIST and synthetic datasets available. But it also warned that the real contribution is coresets from computational geometry, not GMM itself. GMM is just the application target. This means Part C would require explaining VC-dimension and pseudo-dimension concepts, which is much harder than explaining a standard GMM or SVM improvement.",
+      "student_verification": "I read the abstract and Section 1 of the paper and confirmed it is framed as 'coresets for mixture models', not as a GMM improvement. The contribution is the coreset construction, not the EM algorithm. This matched Claude's warning exactly.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 8,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 pro",
+      "purpose": "Final verification of chosen paper: A Study of Information Retrieval Weighting Schemes for Sentiment Analysis (Paltoglou, Thelwall, ACL 2010)",
+      "prompt": "Check this one: A study of Information Retrieval weighting schemes for sentiment analysis — Georgios Paltoglou, Mike Thelwall, ACL 2010. Is it looking so good and satisfying all requirements?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed every single requirement cleanly: ACL 2010 main conference (A*), year 2010, linear SVM is the core classifier throughout the entire paper, Movie Review and MDSD datasets are freely available standard NLP benchmarks with no login or approval required, no dependency parsing or graph optimization needed, full pipeline is TfidfVectorizer plus LinearSVC under 40 lines of Python. This was the cleanest verification across all four papers I evaluated.",
+      "student_verification": "I independently fetched aclanthology.org/P10-1141, confirmed the paper details and page count (1386-1395 = 10 pages), and verified the Movie Review dataset downloads correctly from cs.cornell.edu/people/pabo/movie-review-data/ without any restrictions.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 9,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1 pro",
+      "purpose": "Building deep understanding of why tf-idf improves SVM sentiment accuracy and what the failure cases are",
+      "prompt": "Why does changing the term weighting scheme (binary vs tf-idf vs delta-tf-idf) affect SVM sentiment classification accuracy? And what are the failure cases and limitations?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Explained that binary features treat all words equally regardless of frequency, while tf-idf down-weights common neutral words and up-weights discriminative sentiment words, giving the SVM a better feature space to separate classes. Key failure cases: domain shift where idf weights learned on one corpus do not transfer, short texts where tf statistics are unreliable, and sarcasm or negation which bag-of-words cannot handle structurally.",
+      "student_verification": "I verified the domain shift failure case against Section 5 of the paper, which shows cross-domain accuracy drops between Movie Review and BLOGS06. This confirmed the failure case was real and observable in the paper's own results.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 10,
+      "date": "2026-03-02",
+      "tool_name": "Claude",
+      "model": "claude-sonnet-4-6",
+      "purpose": "Final cross-check of updated submission sheet to confirm paper is not taken",
+      "prompt": "Create a github json as per the requirement and also give me an answer why I used this. Then also re-verify with the updated list of submission — is it there or not?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Claude scanned every row of the updated submission sheet and confirmed no entry contains the title, authors, or ACL 2010 reference for Paltoglou and Thelwall. This cleared the paper for submission under the strict uniqueness rule.",
+      "student_verification": "I manually opened the live Google Sheets response sheet and scrolled through every row myself to confirm this paper is not taken by any classmate. This matched Claude's finding.",
+      "confidence_level": 5
+    }
+  ],
+
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 8,
+      "prompt": "Check this one: A study of Information Retrieval weighting schemes for sentiment analysis — Georgios Paltoglou, Mike Thelwall, ACL 2010. Is it looking so good and satisfying all requirements?",
+      "why_important": "This was the single most decisive prompt of my entire selection process. After rejecting three previous candidates for dataset unavailability, excessive theoretical depth, and misaligned primary contributions, this prompt finally gave me a clean pass on every single requirement. It confirmed that the pipeline is just TfidfVectorizer plus LinearSVC with no external NLP dependencies — meaning I can fully reproduce, explain, and defend this paper in Parts B and C entirely on my own."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 6,
+      "prompt": "it's a 42 page paper right, which will be hard for the section c without any tool and internet",
+      "why_important": "This was the most important self-correction moment in my selection process. Claude had recommended the JMLR paper as easy but I caught the error by checking the page count myself. Pages 747 to 788 equals 42 pages of Rademacher complexity proofs. This interaction taught me that page count and theoretical depth are as important as formal eligibility criteria. A paper can pass all rules but still be impractical if the theory cannot be explained without tools in Part C. This changed how I evaluated every subsequent candidate."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 2,
+      "prompt": "The Paper is: Paper title: Target-dependent Twitter Sentiment Classification, Authors: Long Jiang, Mo Yu, Ming Zhou, Xiaohua Liu, Tiejun Zhao, Conference/venue: ACL 2011. Is it meeting all the requirements and following all the constraints?",
+      "why_important": "This prompt revealed two risks I had not considered before: dataset unavailability and dependency parsing complexity. Before this interaction I assumed any ACL SVM paper would be straightforward to implement. After it, I understood I needed to specifically check whether the original dataset was publicly released and whether feature extraction required external NLP pipelines. These became my two primary filters for all subsequent evaluations, directly leading me toward a simpler bag-of-words SVM paper."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 7,
+      "prompt": "Check this one then? Scalable Training of Mixture Models via Coresets — Feldman, Faulkner, Krause, NeurIPS 2011. And also check if it satisfies the venue requirement explicitly.",
+      "why_important": "This prompt taught me a critical distinction: a paper where the classical method IS the contribution versus a paper where the classical method is only the application vehicle. The coresets paper uses GMM but the real contribution is computational geometry. I applied this filter to my final choice and confirmed that in Paltoglou and Thelwall, SVM is genuinely the primary classifier and the novelty is the weighting scheme applied to the SVM — not something else using SVM as a tool."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 9,
+      "prompt": "Why does changing the term weighting scheme (binary vs tf-idf vs delta-tf-idf) affect SVM sentiment classification accuracy? And what are the failure cases and limitations?",
+      "why_important": "Part C is proctored with no internet access. This prompt helped me build genuine conceptual understanding of the paper's core mechanism — why term weighting controls which feature dimensions the SVM hyperplane relies on — and identify specific, paper-verified failure cases I can explain from memory. I confirmed every point against the paper's Section 3 and Section 5 so I can discuss assumptions, trade-offs, and failure modes independently without any tools."
+    }
+  ],
+
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A. All prompts listed are the actual prompts I used during paper selection. The interaction log reflects my genuine decision journey including three papers I evaluated and rejected before arriving at my final choice. I caught at least one factual error in the LLM's recommendations through independent verification. I have independently verified all key claims against official ACL Anthology records and dataset download links. I am fully responsible for all submitted content and am prepared to explain my paper selection independently in Part C without any tools.",
+    "understanding_acknowledged": true,
+    "signature": "Soumyaranjan Behera",
+    "date": "2026-03-02"
+  }
+}
