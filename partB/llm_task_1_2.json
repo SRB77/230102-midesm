@@ -1,0 +1,55 @@
+{
+  "student_metadata": {
+    "name": "Soumyaranjan Behera",
+    "roll_number": "230102",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 1.2",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude",
+      "model": "opus-4.6",
+      "provider": "Anthropic"
+    },
+    {
+      "tool_name": "Perplexity",
+      "model": "GROK",
+      "provider": "Perplexity"
+    }
+  ],
+  "task_description": "Identify key assumptions underlying the proposed weighting scheme for sentiment classification.",
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-07",
+      "tool_name": "Claude",
+      "model": "opus-4.6",
+      "task_tag": "Task 1.2",
+      "purpose": "Understanding the theoretical assumptions behind Delta TF-IDF weighting.",
+      "prompt": "What assumptions does Delta TF-IDF rely on in sentiment classification?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Highlighted assumptions such as class-specific word distributions and discriminative term weighting.",
+      "student_verification": "Cross-checked assumptions against the discussion of class-specific IDF in Section 3.2 of the paper.",
+      "code_used_verbatim": false,
+      "student_modification": "Rewrote the assumptions in my own words and added violation scenarios.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt_summary": "Identify assumptions behind Delta TF-IDF weighting.",
+      "why_most_useful": "Helped identify methodological assumptions required by the proposed approach."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 1.2.",
+    "understanding_acknowledged": true,
+    "signature": "Soumyaranjan Behera",
+    "date": "2026-03-12"
+  }
+}

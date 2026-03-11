@@ -1,0 +1,175 @@
+{
+  "student_metadata": {
+    "name": "Soumyaranjan Behera",
+    "roll_number": "230102",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 2.1",
+    "submission_date": "2026-03-12"
+  },
+
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+
+  "task_description": "Selecting and preparing a toy dataset for reproducing the sentiment classification weighting scheme experiment described in the selected research paper.",
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-09",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.1",
+      "purpose": "Identifying a dataset suitable for reproducing sentiment classification experiments similar to the research paper.",
+      "prompt": "I need a dataset for reproducing sentiment classification experiments using SVM and text features. It should be simple but still representative of real sentiment analysis problems. What datasets can I use?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM suggested several datasets including IMDB movie reviews, Amazon reviews, and Twitter sentiment datasets. IMDB was selected because it is a well-known binary sentiment dataset with clear positive and negative labels.",
+      "student_verification": "Verified that the IMDB dataset matches the binary sentiment classification setup used in the paper's experiments.",
+      "code_used_verbatim": false,
+      "student_modification": "Dataset loading was implemented using the HuggingFace datasets library rather than downloading raw files manually.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 2,
+      "date": "2026-03-09",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.1",
+      "purpose": "Understanding how to programmatically load the IMDB dataset using Python.",
+      "prompt": "How can I load the IMDB movie review dataset using the HuggingFace datasets library and convert it to a pandas dataframe?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided a code template using load_dataset('imdb') and converting the result into a pandas dataframe with review text and sentiment labels.",
+      "student_verification": "Executed the code and confirmed that the dataframe contained the expected columns for text and sentiment labels.",
+      "code_used_verbatim": true,
+      "student_modification": "Renamed the columns to 'review' and 'sentiment' for clarity and consistency in later tasks.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 3,
+      "date": "2026-03-09",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.1",
+      "purpose": "Designing a smaller toy dataset from the full dataset.",
+      "prompt": "The IMDB dataset has many samples. For a classroom reproduction experiment I want a smaller toy dataset. What is a good way to create a smaller subset while keeping the class distribution balanced?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested sampling a fixed number of examples from the dataset with a random seed to ensure reproducibility.",
+      "student_verification": "Checked the resulting dataset distribution to ensure both classes remained balanced.",
+      "code_used_verbatim": true,
+      "student_modification": "Used pandas sampling with random_state=42 to produce a deterministic 2000-sample toy dataset.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 4,
+      "date": "2026-03-09",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.1",
+      "purpose": "Saving the toy dataset for use in later tasks.",
+      "prompt": "Since my tasks are in separate notebooks, how can I save my toy dataset so it can be reused in later tasks like Task 2.2?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested exporting the dataframe to CSV so that other notebooks can load the same dataset without repeating preprocessing steps.",
+      "student_verification": "Verified that the saved CSV file loads correctly in a separate notebook.",
+      "code_used_verbatim": true,
+      "student_modification": "Saved the dataset into the required repository structure under partB/data/imdb_toy_dataset.csv.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 5,
+      "date": "2026-03-09",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.1",
+      "purpose": "Understanding what preprocessing steps should be applied to the dataset.",
+      "prompt": "What preprocessing steps are typically applied before training sentiment classification models using bag-of-words features?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested standard preprocessing steps such as lowercasing, removing punctuation, and basic text cleaning.",
+      "student_verification": "Confirmed that similar preprocessing steps are mentioned in the experimental setup section of the research paper.",
+      "code_used_verbatim": false,
+      "student_modification": "Applied minimal preprocessing consistent with the paper to avoid introducing additional feature engineering.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 6,
+      "date": "2026-03-09",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.1",
+      "purpose": "Ensuring the dataset preparation process is reproducible.",
+      "prompt": "What are best practices for making dataset preparation reproducible in machine learning experiments?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested setting random seeds, documenting preprocessing steps, and saving dataset files.",
+      "student_verification": "Confirmed these practices are consistent with the reproducibility checklist required in the assignment.",
+      "code_used_verbatim": false,
+      "student_modification": "Added explicit random seed initialization at the top of the notebook.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 7,
+      "date": "2026-03-09",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.1",
+      "purpose": "Writing the dataset justification markdown explanation.",
+      "prompt": "Help me write a short explanation describing why the IMDB dataset is a suitable toy dataset for reproducing sentiment classification experiments.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided a structured explanation including dataset description, relevance to the research problem, and limitations compared to the original paper dataset.",
+      "student_verification": "Rewrote the explanation in my own words and verified that the reasoning reflects the experimental setup of the research paper.",
+      "code_used_verbatim": false,
+      "student_modification": "Expanded the explanation to explicitly connect the dataset to sentiment classification experiments using SVM and text weighting schemes.",
+      "confidence_level": 5
+    }
+  ],
+
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt_summary": "Suggest datasets suitable for sentiment classification reproduction experiments.",
+      "why_most_useful": "Helped identify IMDB as a dataset aligned with the paper’s binary sentiment classification setting."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt_summary": "Load IMDB dataset using HuggingFace datasets library.",
+      "why_most_useful": "Provided the practical code needed to programmatically access the dataset."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt_summary": "Create balanced toy dataset subset from a larger dataset.",
+      "why_most_useful": "Enabled creation of a smaller dataset suitable for experimentation."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt_summary": "Save dataset for reuse across notebooks.",
+      "why_most_useful": "Ensured that later tasks could load the same dataset without repeating preprocessing."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 7,
+      "prompt_summary": "Write dataset justification for academic notebook.",
+      "why_most_useful": "Helped structure the dataset explanation required in the assignment."
+    }
+  ],
+
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 2.1 of Part B.",
+    "understanding_acknowledged": true,
+    "signature": "Soumyaranjan Behera",
+    "date": "2026-03-12"
+  }
+}

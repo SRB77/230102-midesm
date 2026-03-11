@@ -1,0 +1,175 @@
+{
+  "student_metadata": {
+    "name": "Soumyaranjan Behera",
+    "roll_number": "230102",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 3.2",
+    "submission_date": "2026-03-12"
+  },
+
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+
+  "task_description": "Construct and analyse a failure scenario for the reproduced sentiment classification method.",
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Understanding the concept of failure modes in machine learning experiments.",
+      "prompt": "What is a failure mode in machine learning models and how can it be demonstrated experimentally?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM explained that a failure mode occurs when a model performs poorly under certain data conditions or assumptions, and suggested constructing datasets that violate the model’s assumptions.",
+      "student_verification": "Verified that this aligns with the assignment instructions which require constructing a scenario where the method performs poorly.",
+      "code_used_verbatim": false,
+      "student_modification": "Applied this idea to sentiment classification by altering the dataset distribution and feature patterns.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Identifying possible failure scenarios for SVM-based sentiment classification.",
+      "prompt": "In what situations might an SVM-based sentiment classifier fail to produce accurate predictions?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM suggested cases such as highly imbalanced datasets, vocabulary mismatch between training and testing data, and ambiguous sentiment expressions.",
+      "student_verification": "Cross-checked these scenarios with assumptions about feature distributions identified earlier in Task 1.2.",
+      "code_used_verbatim": false,
+      "student_modification": "Selected vocabulary mismatch and class imbalance as the main failure scenario to demonstrate.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 3,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Designing a dataset modification that causes model failure.",
+      "prompt": "How can I modify a dataset to demonstrate a failure case for sentiment classification models?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested introducing noisy or irrelevant features and creating distribution shifts between training and testing data.",
+      "student_verification": "Confirmed that modifying the dataset in this way produces noticeable drops in classification accuracy.",
+      "code_used_verbatim": false,
+      "student_modification": "Constructed a modified dataset subset where feature distributions differed significantly from the training data.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 4,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Implementing the failure experiment in the notebook.",
+      "prompt": "How can I demonstrate a failure scenario in a machine learning notebook with code and visualisation?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM suggested training the model on the original dataset and testing it on the modified dataset while reporting the accuracy difference.",
+      "student_verification": "Ran the experiment and observed a clear decrease in classification accuracy.",
+      "code_used_verbatim": false,
+      "student_modification": "Integrated the failure experiment within the existing evaluation pipeline used in earlier tasks.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 5,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Visualizing the failure experiment results.",
+      "prompt": "What is a good way to visualize a machine learning failure scenario in a notebook?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested plotting accuracy comparisons between the original experiment and the failure scenario.",
+      "student_verification": "Generated a bar chart illustrating the performance drop in the modified dataset.",
+      "code_used_verbatim": true,
+      "student_modification": "Adjusted plot labels to clearly identify the failure scenario experiment.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 6,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Explaining why the failure occurs.",
+      "prompt": "How should I explain the reasons behind a machine learning model’s failure in an experiment?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested linking the failure to violated assumptions, feature distribution changes, and limitations of the model architecture.",
+      "student_verification": "Connected the explanation to the assumptions about word distribution and discriminative features discussed earlier.",
+      "code_used_verbatim": false,
+      "student_modification": "Expanded the explanation to relate the failure scenario to feature weighting assumptions in sentiment classification.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 7,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Suggesting a potential improvement to mitigate the failure.",
+      "prompt": "What modifications could improve a sentiment classifier when it fails due to dataset distribution differences?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested approaches such as domain adaptation, feature engineering, and training with more diverse datasets.",
+      "student_verification": "Confirmed that these approaches are commonly used solutions in sentiment analysis research.",
+      "code_used_verbatim": false,
+      "student_modification": "Included a final sentence suggesting improved feature representations as a possible mitigation.",
+      "confidence_level": 5
+    }
+  ],
+
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 2,
+      "prompt_summary": "Identify failure scenarios for SVM sentiment classifiers.",
+      "why_most_useful": "Helped determine realistic conditions where the model could fail."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 3,
+      "prompt_summary": "Modify dataset to demonstrate model failure.",
+      "why_most_useful": "Guided the design of the failure experiment."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 6,
+      "prompt_summary": "Explain why machine learning models fail in experiments.",
+      "why_most_useful": "Helped write the reasoning behind the failure analysis."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt_summary": "Implement failure scenario experiment.",
+      "why_most_useful": "Helped structure the experiment code and evaluation process."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 7,
+      "prompt_summary": "Suggest improvements for failing sentiment classifiers.",
+      "why_most_useful": "Helped write the final mitigation suggestion required by the task."
+    }
+  ],
+
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 3.2 of Part B.",
+    "understanding_acknowledged": true,
+    "signature": "Soumyaranjan Behera",
+    "date": "2026-03-12"
+  }
+}

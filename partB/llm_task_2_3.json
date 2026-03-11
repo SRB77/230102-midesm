@@ -1,0 +1,175 @@
+{
+  "student_metadata": {
+    "name": "Soumyaranjan Behera",
+    "roll_number": "230102",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 2.3",
+    "submission_date": "2026-03-12"
+  },
+
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+
+  "task_description": "Analyse reproduction results, compare them with the paper's findings, generate visualisations, and document reproducibility conditions.",
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Understanding how to report results from the reproduction experiment.",
+      "prompt": "How should I report and interpret results when reproducing a machine learning experiment from a research paper?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM suggested presenting model accuracy along with a short explanation describing how the results compare with the original paper and identifying possible reasons for differences.",
+      "student_verification": "Checked the reported accuracy values from the reproduction experiment and compared them with values discussed in the paper's experimental results section.",
+      "code_used_verbatim": false,
+      "student_modification": "Expanded the interpretation to include dataset size differences and simplified preprocessing used in the toy experiment.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Creating visualisations comparing model performance.",
+      "prompt": "How can I visualize model accuracy comparison between binary features, TF-IDF, and Delta TF-IDF using Python?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided a matplotlib code template for creating a bar chart comparing accuracy values from different feature representations.",
+      "student_verification": "Executed the plotting code and verified that the visualization clearly shows the differences between feature representations.",
+      "code_used_verbatim": true,
+      "student_modification": "Modified axis labels and titles to match the experiment description and saved the plot in the required results directory.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 3,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Understanding why reproduced results differ from paper results.",
+      "prompt": "If my reproduction experiment gives slightly different accuracy than the research paper, what could be the reasons?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM explained that differences can arise from dataset size, preprocessing differences, feature extraction variations, and random train-test splits.",
+      "student_verification": "Confirmed that the reproduction experiment used a smaller toy dataset compared to the original datasets used in the paper.",
+      "code_used_verbatim": false,
+      "student_modification": "Added these explanations to the markdown interpretation cell of the notebook.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 4,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Writing a concise explanation of the experiment results.",
+      "prompt": "Help me write a short interpretation explaining why Delta TF-IDF performs better than binary features in sentiment classification.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM suggested explaining that Delta TF-IDF emphasizes words that are more discriminative between sentiment classes.",
+      "student_verification": "Checked the explanation against the conceptual description of Delta TF-IDF in the research paper.",
+      "code_used_verbatim": false,
+      "student_modification": "Rewrote the explanation in my own words to ensure it reflects the actual results obtained in the experiment.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 5,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Understanding how to implement reproducibility practices in the notebook.",
+      "prompt": "What should be included in a reproducibility checklist for machine learning experiments?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM suggested including random seed initialization, dependency documentation, dataset loading instructions, and centralized hyperparameter definitions.",
+      "student_verification": "Compared the suggestions with the reproducibility checklist required in the assignment instructions.",
+      "code_used_verbatim": false,
+      "student_modification": "Created a final markdown section confirming each reproducibility requirement.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 6,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Ensuring that experiment outputs are clearly documented.",
+      "prompt": "What is the best way to present experiment outputs and plots in a machine learning notebook for academic evaluation?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested placing visualizations immediately after experiment results and writing short explanations describing what the plot shows.",
+      "student_verification": "Confirmed that the visualization follows the recommended structure for readability.",
+      "code_used_verbatim": false,
+      "student_modification": "Added captions explaining the comparison between feature representations.",
+      "confidence_level": 5
+    },
+
+    {
+      "interaction_id": 7,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Structuring the final markdown section summarizing experiment findings.",
+      "prompt": "How can I structure the final markdown section summarizing my experiment findings and observations?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested organizing the section into result summary, comparison with paper, explanation of differences, and reproducibility notes.",
+      "student_verification": "Confirmed that this structure aligns with the reporting requirements of Task 2.3.",
+      "code_used_verbatim": false,
+      "student_modification": "Expanded the markdown explanation to include observations about feature weighting and classification accuracy.",
+      "confidence_level": 5
+    }
+  ],
+
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 2,
+      "prompt_summary": "Visualize accuracy comparison between feature representations.",
+      "why_most_useful": "Enabled creation of the required experiment visualization."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 3,
+      "prompt_summary": "Explain differences between reproduced and paper results.",
+      "why_most_useful": "Helped write the experiment analysis discussion."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 5,
+      "prompt_summary": "Create reproducibility checklist for ML experiments.",
+      "why_most_useful": "Helped satisfy the assignment reproducibility requirements."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 1,
+      "prompt_summary": "How to report results in reproduction experiments.",
+      "why_most_useful": "Guided the structure of the experiment results section."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 4,
+      "prompt_summary": "Explain why Delta TF-IDF improves sentiment classification.",
+      "why_most_useful": "Helped interpret the performance improvements observed in the experiment."
+    }
+  ],
+
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 2.3 of Part B.",
+    "understanding_acknowledged": true,
+    "signature": "Soumyaranjan Behera",
+    "date": "2026-03-12"
+  }
+}
