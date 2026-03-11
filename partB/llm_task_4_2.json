@@ -1,0 +1,173 @@
+{
+  "student_metadata": {
+    "name": "Soumyaranjan Behera",
+    "roll_number": "230102",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 4.2",
+    "submission_date": "2026-03-12"
+  },
+
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.2",
+      "purpose": "Understanding the structure required for LLM disclosure JSON files.",
+      "prompt": "For my AML midsem Part B I need to create LLM disclosure JSON files similar to Part A. What fields should be included to properly document LLM usage?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The response clarified that each JSON should contain student_metadata, llm_tools_used, full_llm_interaction_log, top_5_prompts, and student_declaration.",
+      "student_verification": "Cross-checked this structure with the instructions provided in the exam document and examples from classmates.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Used the structure as a base template for creating all disclosure JSON files."
+    },
+
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.2",
+      "purpose": "Understanding how to organize interactions for each task.",
+      "prompt": "Should each task have a separate JSON file documenting the LLM usage interactions?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested organizing interactions by task so that each JSON file corresponds to one specific task.",
+      "student_verification": "Confirmed that other submissions followed the same structure.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Created individual JSON files for tasks 1.1 through 4.2."
+    },
+
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.2",
+      "purpose": "Ensuring chronological ordering of interaction logs.",
+      "prompt": "When documenting LLM usage, should the interaction log follow the chronological order of conversations?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested maintaining chronological order to reflect the actual workflow during the assignment.",
+      "student_verification": "Reviewed my conversation history and ordered entries accordingly.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Reordered a few interactions so that the logs follow the real sequence of work."
+    },
+
+    {
+      "interaction_id": 4,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.2",
+      "purpose": "Improving clarity of verification statements in disclosure files.",
+      "prompt": "How can I write verification statements that clearly show I checked the LLM outputs instead of copying them blindly?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested explicitly mentioning steps such as comparing outputs with the research paper or running code to verify correctness.",
+      "student_verification": "Updated verification fields across JSON files to describe how outputs were checked against experiments.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Rewrote several verification statements to be task-specific."
+    },
+
+    {
+      "interaction_id": 5,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.2",
+      "purpose": "Ensuring consistency of field names across all JSON files.",
+      "prompt": "How can I make sure that the formatting of multiple JSON files stays consistent?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested creating a template and duplicating it for each task while updating the task name and interaction logs.",
+      "student_verification": "Checked all JSON files manually to confirm the fields match exactly.",
+      "confidence_level": 4,
+      "code_used_verbatim": false,
+      "student_modification": "Standardized field names across all JSON files."
+    },
+
+    {
+      "interaction_id": 6,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.2",
+      "purpose": "Improving readability of disclosure logs.",
+      "prompt": "What makes an LLM usage disclosure look clear and genuine for academic submissions?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested including clear descriptions of how the LLM helped and what modifications were made by the student.",
+      "student_verification": "Reviewed each log entry and expanded descriptions where necessary.",
+      "confidence_level": 4,
+      "code_used_verbatim": false,
+      "student_modification": "Added detailed explanations for several interaction logs."
+    },
+
+    {
+      "interaction_id": 7,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.2",
+      "purpose": "Final review of disclosure files before submission.",
+      "prompt": "Before submitting my LLM disclosure JSON files, what should I check to ensure they are complete?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested verifying field completeness, checking JSON syntax, and ensuring each task file contains relevant interactions.",
+      "student_verification": "Reviewed all JSON files and validated their formatting.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Corrected minor formatting inconsistencies before final submission."
+    }
+  ],
+
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "For my AML midsem Part B I need to create LLM disclosure JSON files similar to Part A. What fields should be included?",
+      "why_important": "This helped establish the correct structure for all disclosure files."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 3,
+      "prompt": "Should the interaction log follow chronological order?",
+      "why_important": "Ensured that the disclosure logs reflect the real workflow."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 4,
+      "prompt": "How can I write verification statements that show I validated the LLM output?",
+      "why_important": "Improved credibility of the disclosure files."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 5,
+      "prompt": "How can I keep formatting consistent across multiple JSON files?",
+      "why_important": "Helped maintain a consistent structure for all tasks."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 7,
+      "prompt": "What should I check before submitting my LLM disclosure files?",
+      "why_important": "Ensured completeness and correctness before submission."
+    }
+  ],
+
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Soumyaranjan Behera",
+    "date": "2026-03-12"
+  }
+}

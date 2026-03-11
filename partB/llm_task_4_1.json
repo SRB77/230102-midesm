@@ -1,0 +1,173 @@
+{
+  "student_metadata": {
+    "name": "Soumyaranjan Behera",
+    "roll_number": "230102",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 4.1",
+    "submission_date": "2026-03-12"
+  },
+
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.1",
+      "purpose": "Understanding how to structure the final report for the reproduction study.",
+      "prompt": "I need to write a short report summarizing my reproduction of a sentiment classification paper. What sections should I include so that the report clearly explains my work and findings?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The response suggested including sections such as paper summary, dataset selection, implementation details, experiment results, ablation study, failure analysis, and reflection.",
+      "student_verification": "Compared the suggested structure with the assignment instructions and ensured that all required tasks were covered.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Used the suggested structure but adjusted section ordering to match the sequence of tasks completed in the notebook."
+    },
+
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.1",
+      "purpose": "Writing the paper summary section of the report.",
+      "prompt": "How can I write a concise summary of a research paper on sentiment classification that highlights the main idea and contributions?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Suggested focusing on the problem addressed, the key method introduced, and the main experimental findings.",
+      "student_verification": "Re-read the paper and ensured that the summary reflects the actual contributions of the method.",
+      "confidence_level": 4,
+      "code_used_verbatim": false,
+      "student_modification": "Rewrote the summary using my own wording and referencing the specific experiments reproduced."
+    },
+
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.1",
+      "purpose": "Explaining implementation details clearly in the report.",
+      "prompt": "What is a good way to describe implementation details of a machine learning experiment in a short academic report?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested explaining the dataset used, feature representation, model training approach, and evaluation metrics.",
+      "student_verification": "Checked that the implementation description matches the code used in the notebooks.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Added references to specific experiment steps such as TF-IDF vectorization and SVM classification."
+    },
+
+    {
+      "interaction_id": 4,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.1",
+      "purpose": "Writing the results and discussion section.",
+      "prompt": "How can I clearly explain experiment results and comparisons in a reproduction study?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested presenting numerical results alongside a brief explanation of what they indicate about the method.",
+      "student_verification": "Ensured that the results described match the actual experiment outputs generated in Task 2.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Expanded explanations to connect observed results with feature weighting concepts."
+    },
+
+    {
+      "interaction_id": 5,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.1",
+      "purpose": "Writing the reflection section of the report.",
+      "prompt": "How do I write a reflection section describing what I learned from reproducing a machine learning paper?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested discussing challenges encountered, insights gained, and lessons learned about the method and its assumptions.",
+      "student_verification": "Ensured the reflection accurately describes the work performed during the assignment.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Expanded the reflection to include insights about feature representation and reproducibility."
+    },
+
+    {
+      "interaction_id": 6,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.1",
+      "purpose": "Improving readability and flow of the report.",
+      "prompt": "What are some ways to improve readability and coherence in a short technical report?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested using clear section transitions, consistent paragraph structure, and concise explanations.",
+      "student_verification": "Reviewed the report draft and applied these suggestions where appropriate.",
+      "confidence_level": 4,
+      "code_used_verbatim": false,
+      "student_modification": "Revised transitions between sections to improve logical flow."
+    },
+
+    {
+      "interaction_id": 7,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 4.1",
+      "purpose": "Final review of the report before submission.",
+      "prompt": "Before submitting my machine learning experiment report, what key things should I double-check?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested checking clarity of explanations, consistency between reported results and experiments, and overall formatting.",
+      "student_verification": "Performed a final review of the report and corrected minor formatting issues.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Made small edits to ensure consistency between sections."
+    }
+  ],
+
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "What sections should I include in a reproduction study report?",
+      "why_important": "Helped determine the overall structure of the final report."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 5,
+      "prompt": "How do I write a reflection section describing what I learned from reproducing a paper?",
+      "why_important": "Guided the most subjective part of the report."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 4,
+      "prompt": "How can I clearly explain experiment results in a reproduction study?",
+      "why_important": "Ensured the results discussion was clear and informative."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 3,
+      "prompt": "How should implementation details be explained in an academic report?",
+      "why_important": "Helped present the experiment pipeline clearly."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 6,
+      "prompt": "What improves readability in a short technical report?",
+      "why_important": "Improved the clarity and structure of the final report."
+    }
+  ],
+
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Soumyaranjan Behera",
+    "date": "2026-03-12"
+  }
+}
